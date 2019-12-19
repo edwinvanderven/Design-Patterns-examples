@@ -9,6 +9,8 @@ Every design pattern and code examples will be located into its own subfolder.
 
 ## Patterns
 
+- [Strategy](strategy/README.md)
+
 ## Sources
 
 - [Head First Design Patterns - O'REILLY](https://www.oreilly.com/library/view/head-first-design/0596007124/)
