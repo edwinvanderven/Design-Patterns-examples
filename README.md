@@ -9,7 +9,7 @@ Every design pattern and code examples will be located into its own subfolder.
 
 ## Patterns
 
-- [Strategy](strategy/README.md)
+- [Strategy](strategy)
 
 ## Sources
 
