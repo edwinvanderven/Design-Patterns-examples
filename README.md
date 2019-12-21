@@ -1,6 +1,6 @@
 # Design Patterns examples
 
-Various implementations of different design patterns
+Various implementations of different design patterns.
 
 ## Introduction
 
@@ -9,8 +9,39 @@ Every design pattern and code examples will be located into its own subfolder.
 
 ## Patterns
 
+### Creational
+
+- Abstract Factory
+- Builder
+- Factory Method
+- Prototype
+- Singleton
+
+### Structural
+
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Flyweight
+- Proxy
+
+### Behavioral
+
+- Chain of Responsibility
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
 - [Strategy](strategy)
+- Template
+- Visitor
 
 ## Sources
 
 - [Head First Design Patterns - O'REILLY](https://www.oreilly.com/library/view/head-first-design/0596007124/)
+- [WikiBooks - Design Patterns](https://en.m.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture/Design_Patterns)
