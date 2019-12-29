@@ -15,7 +15,7 @@ Every design pattern and code examples will be located into its own subfolder.
 - Builder
 - Factory Method
 - Prototype
-- Singleton
+- [Singleton](singleton)
 
 ### Structural
 
