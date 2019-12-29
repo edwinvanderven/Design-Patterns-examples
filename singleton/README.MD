@@ -2,7 +2,7 @@
 
 Official description of the **Singleton** pattern
 > A class of which only a single instance can exist.
-> Ensure a class only has one instance, and provide a global point of access to it.
+Ensure a class only has one instance, and provide a global point of access to it.
 
 ---
 
