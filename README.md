@@ -35,7 +35,7 @@ Every design pattern and code examples will be located into its own subfolder.
 - Iterator
 - Mediator
 - Memento
-- Observer
+- [Observer](observer)
 - State
 - [Strategy](strategy)
 - Template
