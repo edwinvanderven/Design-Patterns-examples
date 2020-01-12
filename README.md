@@ -22,7 +22,7 @@ Every design pattern and code examples will be located into its own subfolder.
 - Adapter
 - Bridge
 - Composite
-- Decorator
+- [Decorator](decorator)
 - Facade
 - Flyweight
 - Proxy
