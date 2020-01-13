@@ -1,31 +1,36 @@
-import { EatBehavior, EatLikeManiac, EatWithGrace } from "./behaviors/eat"
-import { PlayBehavior, PlayInPack, PlayIsolated } from "./behaviors/play";
+class Context {
+  private behavior: Behavior;
 
-export class Animal {
-  eatBehavior: EatBehavior;
-  playBehavior: PlayBehavior;
+  constructor(behavior: Behavior) {
+    this.behavior = behavior;
+  }
 
-  setEatBehavior = (behavior: EatBehavior) => this.eatBehavior = behavior;
-  setPlayBehavior = (behavior: PlayBehavior) => this.playBehavior = behavior;
+  public setBehavior(behavior: Behavior) {
+    this.behavior = behavior;
+  }
 
-  performEat = () => this.eatBehavior.eat();
-  performPlay = () => this.playBehavior.play();
-}
-
-export class Dog extends Animal {
-  constructor() {
-    super();
-
-    this.setEatBehavior(new EatLikeManiac());
-    this.setPlayBehavior(new PlayInPack());
+  public doAction(): string {
+    return this.behavior.run();
   }
 }
 
-export class Cat extends Animal {
-  constructor() {
-    super();
+interface Behavior {
+  run(): string;
+}
 
-    this.setEatBehavior(new EatWithGrace());
-    this.setPlayBehavior(new PlayIsolated());
+class FirstBehavior implements Behavior {
+  public run(): string {
+    return 'This is the first behavior.';
   }
 }
+
+class SecondBehavior implements Behavior {
+  public run(): string {
+    return 'This is the second behavior.';
+  }
+}
+
+const context = new Context(new FirstBehavior());
+console.log(context.doAction());
+context.setBehavior(new SecondBehavior());
+console.log(context.doAction());
