@@ -6,6 +6,6 @@ Official description of the **Strategy** pattern
 
 ---
 
-**Strategy** means dividing responsibility to behavior. You can then implement this behavior per object.
-The original object, called context, holds a reference to the behavior and delegates its execution.
+**Strategy** means dividing responsibility to behavior. You can then implement this behavior per object.\
+The original object, called context, holds a reference to the behavior and delegates its execution.\
 In order to change the way the context performs its work, other objects may replace the currently strategy object.

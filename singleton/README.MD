@@ -6,5 +6,5 @@ Official description of the **Singleton** pattern
 
 ---
 
-**Singleton**, in its definition, means to have one instance of a class inside the application.
+**Singleton**, in its definition, means to have one instance of a class inside the application.\
 The pattern also means to provide a global access point to that single instance.

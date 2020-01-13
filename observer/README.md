@@ -5,5 +5,5 @@ Official description of the **Observer** pattern
 
 ---
 
-**Observer** allows an object to notify other interested objects.
+**Observer** allows an object to notify other interested objects.\
 It provides a way to subscribe and unsubsribe to and from these notifcations for any object that implements the corresponding interface.

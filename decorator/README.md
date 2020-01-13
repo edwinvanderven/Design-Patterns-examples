@@ -6,6 +6,6 @@ Official description of the **Decorator** pattern
 
 ---
 
-**Decorator** allows adding new behavior to objects dynamically by placing them inside a special wrapper object.
-You can wrap objects numerous times since both source and target objects follow the same interface.
+**Decorator** allows adding new behavior to objects dynamically by placing them inside a special wrapper object.\
+You can wrap objects numerous times since both source and target objects follow the same interface.\
 The resulting object will get a stacking behavior of all its wrappers.
