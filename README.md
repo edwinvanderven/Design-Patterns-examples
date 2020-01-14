@@ -12,7 +12,7 @@ Every design pattern and code examples will be located into its own subfolder.
 | Creational | Structural | Behavioral |
 | ---------- |------------| ---------- |
 | Abstract Factory | Adapter | Chain of Responsibility |
-| Builder | Bridge | Command |
+| Builder | Bridge | [Command](command) |
 | Factory Method | Composite | Interpreter |
 | Prototype | [Decorator](decorator) | Iterator |
 | [Singleton](singleton) | Facade | Mediator |
