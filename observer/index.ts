@@ -43,13 +43,16 @@ class ConcreteObserverA implements Observer {
 
 class ConcreteObserverB implements Observer {
   public update(event: StateEvent): void {
-    console.log('ConcreteObserverB - update:  ', event.state);
+    console.log('ConcreteObserverB - update: ', event.state);
   }
 }
 
-// new ConcreteObservable()
-// new ConcreteObserverA().attach;
-// new ConcreteObserverB().attach;
-
-// notify()
-
+const subject = new ConcreteObservable();
+const observer1 = new ConcreteObserverA();
+subject.attach(observer1);
+const observer2 = new ConcreteObserverB();
+subject.attach(observer2);
+subject.notify();
+subject.notify();
+subject.detach(observer2);
+subject.notify();

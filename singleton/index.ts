@@ -22,3 +22,5 @@ class SingletonExample {
     console.log('The singleton class works: ', firstInstance === secondInstance);
   }
 }
+
+const example = new SingletonExample();
