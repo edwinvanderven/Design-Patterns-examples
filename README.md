@@ -7,6 +7,23 @@ Various implementations of different design patterns.
 This repository is my attempt to make sense of different design patterns, including tangible examples.\
 Every design pattern and code examples will be located into its own subfolder.
 
+### Code Examples
+
+:information_source: Make sure to have [Node and NPM](https://www.npmjs.com/get-npm) installed.
+
+Inside a terminal run the following commands
+
+```sh
+npm install -g typescript
+npm install -g ts-node
+```
+
+Inside a terminal, navigate to the folder with the code example and run the following command
+
+```sh
+ts-node index.ts
+```
+
 ## Patterns
 
 | Creational             | Structural             | Behavioral              |
