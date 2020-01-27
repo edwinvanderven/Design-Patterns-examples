@@ -40,6 +40,18 @@ ts-node index.ts
 |                        |                        | Template                |
 |                        |                        | Visitor                 |
 
+## Principles
+
+- Encapsulate what varies.
+- Favor composition over inheritance.
+- Program to interfaces, not implementations.
+- Strive for loosely coupled designs between objects that interact.
+- Classes should be open for extension but closed for modification.
+- Depend upon abstractions. Do not depend upon concrete classes.
+- The Least amount of Knowledge; Only talk to your immediate friends.
+- Don’t call us, we’ll call you.
+- A class should have only one reason to change.
+
 ## Sources
 
 - [Head First Design Patterns - O'REILLY](https://www.oreilly.com/library/view/head-first-design/0596007124/)
