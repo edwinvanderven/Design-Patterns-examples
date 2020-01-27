@@ -32,7 +32,7 @@ ts-node index.ts
 | Builder                | Bridge                 | [Command](command)      |
 | Factory Method         | Composite              | Interpreter             |
 | Prototype              | [Decorator](decorator) | Iterator                |
-| [Singleton](singleton) | Facade                 | Mediator                |
+| [Singleton](singleton) | [Facade](facade)       | Mediator                |
 |                        | Flyweight              | Memento                 |
 |                        | Proxy                  | [Observer](observer)    |
 |                        |                        | State                   |
