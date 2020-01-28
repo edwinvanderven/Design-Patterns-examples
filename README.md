@@ -24,7 +24,7 @@ Inside a terminal, navigate to the folder with the code example and run the foll
 ts-node index.ts
 ```
 
-## Patterns
+## Design Patterns
 
 | Creational             | Structural             | Behavioral              |
 | ---------------------- | ---------------------- | ----------------------- |
@@ -40,7 +40,9 @@ ts-node index.ts
 |                        |                        | Template                |
 |                        |                        | Visitor                 |
 
-## Principles
+## Design Principles
+
+Design principles are not patterns but can be used as mental reminders when designing software.
 
 - Encapsulate what varies.
 - Favor composition over inheritance.
