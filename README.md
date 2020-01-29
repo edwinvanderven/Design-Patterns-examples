@@ -26,19 +26,19 @@ ts-node index.ts
 
 ## Design Patterns
 
-| Creational             | Structural             | Behavioral              |
-| ---------------------- | ---------------------- | ----------------------- |
-| Abstract Factory       | Adapter                | Chain of Responsibility |
-| Builder                | Bridge                 | [Command](command)      |
-| Factory Method         | Composite              | Interpreter             |
-| Prototype              | [Decorator](decorator) | Iterator                |
-| [Singleton](singleton) | [Facade](facade)       | Mediator                |
-|                        | Flyweight              | Memento                 |
-|                        | Proxy                  | [Observer](observer)    |
-|                        |                        | State                   |
-|                        |                        | [Strategy](strategy)    |
-|                        |                        | Template                |
-|                        |                        | Visitor                 |
+| Creational                           | Structural             | Behavioral              |
+| ------------------------------------ | ---------------------- | ----------------------- |
+| [Abstract Factory](abstract-factory) | [Adapter](adapter)     | [Chain of Responsibility](chain-of-responsibility) |
+| [Builder](builder)                   | [Bridge](bridge)       | [Command](command)                                 |
+| [Factory Method](factory-method)     | [Composite](composite) | [Interpreter](interpreter)                         |
+| [Prototype](prototype)               | [Decorator](decorator) | [Iterator](iterator)                               |
+| [Singleton](singleton)               | [Facade](facade)       | [Mediator](mediator)                               |
+|                                      | [Flyweight](flyweight) | [Memento](memento)                                 |
+|                                      | [Proxy](proxy)         | [Observer](observer)                               |
+|                                      |                        | [State](state)                                     |
+|                                      |                        | [Strategy](strategy)                               |
+|                                      |                        | [Template](template)                               |
+|                                      |                        | [Visitor](visitor)                                 |
 
 ## Design Principles
 
