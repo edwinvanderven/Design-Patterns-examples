@@ -26,8 +26,8 @@ ts-node index.ts
 
 ## Design Patterns
 
-| Creational                           | Structural             | Behavioral              |
-| ------------------------------------ | ---------------------- | ----------------------- |
+| Creational                           | Structural             | Behavioral                                         |
+| ------------------------------------ | ---------------------- | -------------------------------------------------- |
 | [Abstract Factory](abstract-factory) | [Adapter](adapter)     | [Chain of Responsibility](chain-of-responsibility) |
 | [Builder](builder)                   | [Bridge](bridge)       | [Command](command)                                 |
 | [Factory Method](factory-method)     | [Composite](composite) | [Interpreter](interpreter)                         |
