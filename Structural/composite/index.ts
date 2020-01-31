@@ -55,8 +55,8 @@ class Composite extends Component {
   }
 }
 
-const simple = new Leaf();
-console.log('Leaf: ', simple.operation());
+const simpleLeaf = new Leaf();
+console.log('Leaf: ', simpleLeaf.operation());
 
 const tree = new Composite();
 const branch1 = new Composite();
@@ -69,6 +69,6 @@ tree.add(branch2);
 console.log('Composite: ', tree.operation());
 
 if (tree.isComposite()) {
-  tree.add(simple);
+  tree.add(simpleLeaf);
 }
 console.log('Composite and Leafs: ', tree.operation());

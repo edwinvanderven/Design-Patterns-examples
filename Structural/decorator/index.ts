@@ -32,11 +32,11 @@ class ConcreteDecoratorB extends Decorator {
   }
 }
 
-const simple = new ConcreteComponent();
+const simpleDecorator = new ConcreteComponent();
 console.log('A simple component:');
-console.log(`RESULT: ${simple.operation()}`);
+console.log(`RESULT: ${simpleDecorator.operation()}`);
 
-const decorator1 = new ConcreteDecoratorA(simple);
-const decorator2 = new ConcreteDecoratorB(decorator1);
+const complexDecorator1 = new ConcreteDecoratorA(simpleDecorator);
+const complexDecorator2 = new ConcreteDecoratorB(complexDecorator1);
 console.log('A decorated component:');
-console.log(`RESULT: ${decorator2.operation()}`);
+console.log(`RESULT: ${complexDecorator2.operation()}`);
