@@ -26,19 +26,19 @@ ts-node index.ts
 
 ## Design Patterns
 
-| Creational                           | Structural             | Behavioral                                         |
-| ------------------------------------ | ---------------------- | -------------------------------------------------- |
-| [Abstract Factory](abstract-factory) | [Adapter](adapter)     | [Chain of Responsibility](chain-of-responsibility) |
-| [Builder](builder)                   | [Bridge](bridge)       | [Command](command)                                 |
-| [Factory Method](factory-method)     | [Composite](composite) | [Interpreter](interpreter)                         |
-| [Prototype](prototype)               | [Decorator](decorator) | [Iterator](iterator)                               |
-| [Singleton](singleton)               | [Facade](facade)       | [Mediator](mediator)                               |
-|                                      | [Flyweight](flyweight) | [Memento](memento)                                 |
-|                                      | [Proxy](proxy)         | [Observer](observer)                               |
-|                                      |                        | [State](state)                                     |
-|                                      |                        | [Strategy](strategy)                               |
-|                                      |                        | [Template](template)                               |
-|                                      |                        | [Visitor](visitor)                                 |
+| Creational                                      | Structural                        | Behavioral                                                    |
+| ----------------------------------------------- | --------------------------------- | ------------------------------------------------------------- |
+| [Abstract Factory](Creational/abstract-factory) | [Adapter](Structural/adapter)     | [Chain of Responsibility](Behavioral/chain-of-responsibility) |
+| [Builder](Creational/builder)                   | [Bridge](Structural/bridge)       | [Command](Behavioral/command)                                 |
+| [Factory Method](Creational/factory-method)     | [Composite](Structural/composite) | [Interpreter](Behavioral/interpreter)                         |
+| [Prototype](Creational/prototype)               | [Decorator](Structural/decorator) | [Iterator](Behavioral/iterator)                               |
+| [Singleton](Creational/singleton)               | [Facade](Structural/facade)       | [Mediator](Behavioral/mediator)                               |
+|                                                 | [Flyweight](Structural/flyweight) | [Memento](Behavioral/memento)                                 |
+|                                                 | [Proxy](Structural/proxy)         | [Observer](Behavioral/observer)                               |
+|                                                 |                                   | [State](Behavioral/state)                                     |
+|                                                 |                                   | [Strategy](Behavioral/strategy)                               |
+|                                                 |                                   | [Template](Behavioral/template)                               |
+|                                                 |                                   | [Visitor](Behavioral/visitor)                                 |
 
 ## Design Principles
 
