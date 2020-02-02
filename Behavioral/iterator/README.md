@@ -5,5 +5,5 @@ Official description of the **Iterator** pattern
 
 ---
 
-Examples of **Iterator** can be lists, stacks, trees, etc.
+Examples of **Iterator** can be lists, stacks, trees, etc.\
 This pattern allows clients to go over elements of different collections in a similar fashion using a single iterator interface.

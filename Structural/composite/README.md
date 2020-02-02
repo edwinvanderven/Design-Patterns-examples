@@ -6,7 +6,7 @@ Official description of the **Composite** pattern
 
 ---
 
-This pattern enables you to compose objects into tree structures to represent part-whole hierarchies.
+This pattern enables you to compose objects into tree structures to represent part-whole hierarchies.\
 A composite contains components, components come in two flavors: composites and leafs.
 
 - I.e. A menu with sub-menus. This is a tree of objects that is made of parts but that can be treated as a whole.
