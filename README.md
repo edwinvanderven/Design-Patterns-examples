@@ -59,3 +59,4 @@ Design principles are not patterns but can be used as mental reminders when desi
 - [Head First Design Patterns - O'REILLY](https://www.oreilly.com/library/view/head-first-design/0596007124/)
 - [WikiBooks - Design Patterns](https://en.m.wikibooks.org/wiki/Introduction_to_Software_Engineering/Architecture/Design_Patterns)
 - [Refactoring Guru](https://refactoring.guru/)
+- [Geeks for Geeks - Design Patterns](https://www.geeksforgeeks.org/software-design-patterns/)
