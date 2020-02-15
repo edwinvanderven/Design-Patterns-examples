@@ -1,6 +1,7 @@
 # Bridge
 
 Official description of the **Bridge** pattern
+
 > Decouple an abstraction from its implementation allowing the two to vary independently.
 
 ---

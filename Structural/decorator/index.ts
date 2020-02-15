@@ -1,35 +1,35 @@
 interface OperationComponent {
-  operation(): string;
+    operation(): string;
 }
 
 class ConcreteComponent implements OperationComponent {
-  public operation(): string {
-    return 'ConcreteComponent';
-  }
+    public operation(): string {
+        return 'ConcreteComponent';
+    }
 }
 
 class Decorator implements OperationComponent {
-  protected component: OperationComponent;
+    protected component: OperationComponent;
 
-  constructor(component: OperationComponent) {
-    this.component = component;
-  }
+    constructor(component: OperationComponent) {
+        this.component = component;
+    }
 
-  public operation(): string {
-    return this.component.operation();
-  }
+    public operation(): string {
+        return this.component.operation();
+    }
 }
 
 class ConcreteDecoratorA extends Decorator {
-  public operation(): string {
-    return `ConcreteDecoratorA(${super.operation()})`;
-  }
+    public operation(): string {
+        return `ConcreteDecoratorA(${super.operation()})`;
+    }
 }
 
 class ConcreteDecoratorB extends Decorator {
-  public operation(): string {
-    return `ConcreteDecoratorB(${super.operation()})`;
-  }
+    public operation(): string {
+        return `ConcreteDecoratorB(${super.operation()})`;
+    }
 }
 
 const simpleDecorator = new ConcreteComponent();

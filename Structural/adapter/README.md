@@ -1,6 +1,7 @@
 # Adapter
 
 Official description of the **Adapter** pattern
+
 > Convert the interface of a class into another interface the client expects.\
 > Adapter lets classes work together that could otherwise not because of incompatible interfaces.
 

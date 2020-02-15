@@ -1,6 +1,7 @@
 # Decorator
 
 Official description of the **Decorator** pattern
+
 > Attach additional responsibilities to an object dynamically keeping the same interface.\
 > Decorators provide a flexible alternative to subclassing for extending functionality.
 

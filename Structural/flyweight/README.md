@@ -1,6 +1,7 @@
 # Flyweight
 
 Official description of the **Flyweight** pattern
+
 > Use sharing to support large numbers of fine-grained objects efficiently.
 
 ---

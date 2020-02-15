@@ -1,58 +1,58 @@
 abstract class Component {
-  private parent: Component;
+    private parent: Component;
 
-  public setParent(parent: Component) {
-      this.parent = parent;
-  }
+    public setParent(parent: Component) {
+        this.parent = parent;
+    }
 
-  public getParent(): Component {
-      return this.parent;
-  }
+    public getParent(): Component {
+        return this.parent;
+    }
 
-  public add(component: Component): void { }
+    public add(component: Component): void {}
 
-  public remove(component: Component): void { }
+    public remove(component: Component): void {}
 
-  public isComposite(): boolean {
-      return false;
-  }
+    public isComposite(): boolean {
+        return false;
+    }
 
-  public abstract operation(): string;
+    public abstract operation(): string;
 }
 
 class Leaf extends Component {
-  public operation(): string {
-      return 'Leaf';
-  }
+    public operation(): string {
+        return 'Leaf';
+    }
 }
 
 class Composite extends Component {
-  protected children: Component[] = [];
+    protected children: Component[] = [];
 
-  public add(component: Component): void {
-      this.children.push(component);
-      component.setParent(this);
-  }
+    public add(component: Component): void {
+        this.children.push(component);
+        component.setParent(this);
+    }
 
-  public remove(component: Component): void {
-      const componentIndex = this.children.indexOf(component);
-      this.children.splice(componentIndex, 1);
+    public remove(component: Component): void {
+        const componentIndex = this.children.indexOf(component);
+        this.children.splice(componentIndex, 1);
 
-      component.setParent(null);
-  }
+        component.setParent(null);
+    }
 
-  public isComposite(): boolean {
-      return true;
-  }
+    public isComposite(): boolean {
+        return true;
+    }
 
-  public operation(): string {
-      const results = [];
-      for (const child of this.children) {
-          results.push(child.operation());
-      }
+    public operation(): string {
+        const results = [];
+        for (const child of this.children) {
+            results.push(child.operation());
+        }
 
-      return `Branch(${results.join('+')})`;
-  }
+        return `Branch(${results.join('+')})`;
+    }
 }
 
 const simpleLeaf = new Leaf();
@@ -69,6 +69,6 @@ tree.add(branch2);
 console.log('Composite: ', tree.operation());
 
 if (tree.isComposite()) {
-  tree.add(simpleLeaf);
+    tree.add(simpleLeaf);
 }
 console.log('Composite and Leafs: ', tree.operation());
