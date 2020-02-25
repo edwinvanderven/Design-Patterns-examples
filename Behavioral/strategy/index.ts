@@ -1,4 +1,4 @@
-class Context {
+class StrategyContext {
     private behavior: Behavior;
 
     constructor(behavior: Behavior) {
@@ -30,7 +30,7 @@ class SecondBehavior implements Behavior {
     }
 }
 
-const context = new Context(new FirstBehavior());
-console.log(context.doAction());
-context.setBehavior(new SecondBehavior());
-console.log(context.doAction());
+const strategyContext = new StrategyContext(new FirstBehavior());
+console.log(strategyContext.doAction());
+strategyContext.setBehavior(new SecondBehavior());
+console.log(strategyContext.doAction());

@@ -1,4 +1,4 @@
-class Context {
+class StateContext {
     private state: State;
 
     constructor(state: State) {
@@ -6,7 +6,7 @@ class Context {
     }
 
     public transitionTo(state: State): void {
-        console.log('Context: Transition to', state.toString());
+        console.log('StateContext: Transition to', state.toString());
         this.state = state;
         this.state.setContext(this);
     }
@@ -21,9 +21,9 @@ class Context {
 }
 
 abstract class State {
-    protected context: Context;
+    protected context: StateContext;
 
-    public setContext(context: Context) {
+    public setContext(context: StateContext) {
         this.context = context;
     }
 
@@ -63,8 +63,8 @@ class StateB extends State {
     }
 }
 
-const context = new Context(new StateA());
-context.request2();
-context.request1();
-context.request1();
-context.request2();
+const stateContext = new StateContext(new StateA());
+stateContext.request2();
+stateContext.request1();
+stateContext.request1();
+stateContext.request2();
