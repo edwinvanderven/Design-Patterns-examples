@@ -1,6 +1,7 @@
 # Observer
 
 Official description of the **Observer** pattern
+
 > Define a one-to-many dependency between objects where a state change in one object results with all its dependents being notified and updated automatically.
 
 ---

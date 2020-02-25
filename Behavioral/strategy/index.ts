@@ -1,33 +1,33 @@
 class Context {
-  private behavior: Behavior;
+    private behavior: Behavior;
 
-  constructor(behavior: Behavior) {
-    this.behavior = behavior;
-  }
+    constructor(behavior: Behavior) {
+        this.behavior = behavior;
+    }
 
-  public setBehavior(behavior: Behavior) {
-    this.behavior = behavior;
-  }
+    public setBehavior(behavior: Behavior) {
+        this.behavior = behavior;
+    }
 
-  public doAction(): string {
-    return this.behavior.run();
-  }
+    public doAction(): string {
+        return this.behavior.run();
+    }
 }
 
 interface Behavior {
-  run(): string;
+    run(): string;
 }
 
 class FirstBehavior implements Behavior {
-  public run(): string {
-    return 'This is the first behavior.';
-  }
+    public run(): string {
+        return 'This is the first behavior.';
+    }
 }
 
 class SecondBehavior implements Behavior {
-  public run(): string {
-    return 'This is the second behavior.';
-  }
+    public run(): string {
+        return 'This is the second behavior.';
+    }
 }
 
 const context = new Context(new FirstBehavior());

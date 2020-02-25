@@ -1,50 +1,50 @@
 interface Observable {
-  attach(observer: Observer): void;
-  detach(observer: Observer): void;
-  notify(): void;
+    attach(observer: Observer): void;
+    detach(observer: Observer): void;
+    notify(): void;
 }
 
 class ConcreteObservable implements Observable {
-  public state: number;
+    public state: number;
 
-  private observers: Observer[] = [];
+    private observers: Observer[] = [];
 
-  public attach(observer: Observer): void {
-    this.observers.push(observer);
-  }
-
-  public detach(observer: Observer): void {
-    const observerIndex = this.observers.indexOf(observer);
-    this.observers.splice(observerIndex, 1);
-  }
-
-  public notify(): void {
-    this.state = Math.floor(Math.random() * (10 + 1));
-    for (const observer of this.observers) {
-      const event: StateEvent = { state: this.state };
-      observer.update(event);
+    public attach(observer: Observer): void {
+        this.observers.push(observer);
     }
-  }
+
+    public detach(observer: Observer): void {
+        const observerIndex = this.observers.indexOf(observer);
+        this.observers.splice(observerIndex, 1);
+    }
+
+    public notify(): void {
+        this.state = Math.floor(Math.random() * (10 + 1));
+        for (const observer of this.observers) {
+            const event: StateEvent = { state: this.state };
+            observer.update(event);
+        }
+    }
 }
 
 interface Observer {
-  update(event: StateEvent): void;
+    update(event: StateEvent): void;
 }
 
 interface StateEvent {
-  state: number;
+    state: number;
 }
 
 class ConcreteObserverA implements Observer {
-  public update(event: StateEvent): void {
-    console.log('ConcreteObserverA - update: ', event.state);
-  }
+    public update(event: StateEvent): void {
+        console.log('ConcreteObserverA - update: ', event.state);
+    }
 }
 
 class ConcreteObserverB implements Observer {
-  public update(event: StateEvent): void {
-    console.log('ConcreteObserverB - update: ', event.state);
-  }
+    public update(event: StateEvent): void {
+        console.log('ConcreteObserverB - update: ', event.state);
+    }
 }
 
 const subject = new ConcreteObservable();
